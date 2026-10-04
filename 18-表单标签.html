@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单标签</title>
+</head>
+
+<body>
+  <form action="">
+    <ul>
+      <li>
+        <!-- 文本框 -->
+        账号：<input type="text" placeholder="请输入账号" name="acount" accesskey="u" autocomplete="off">
+      </li>
+      <li>
+        <!-- 密码框 -->
+        密码：<input type="password">
+      </li>
+      <li>
+        <!-- 文件域 -->
+        <input type="file" multiple accept=".exe .jpg">
+      </li>
+      <!-- 单选框 -->
+      爱好
+      <li>
+        <input type="radio" name="hobby" value="1" checked id="nan">
+        <label for="nan">篮球</label>
+      </li>
+      <li>
+        <label><input type="radio" name="hobby" value="2"> 足球</label>
+      </li>
+      <li>
+        <!-- 文本域 -->
+        <textarea name="msg" placeholder="请输入留言" rows="20" cols="20"></textarea>
+      </li>
+      <li>
+        <!-- 下拉框 -->
+        <select name="city">
+          <option value="1">上海</option>
+          <option value="2">北京</option>
+          <option value="3">重庆</option>
+          <option value="4">天津</option>
+          <option value="5" selected>四川</option>
+        </select>
+      </li>
+      <li>
+        <!-- 按钮 -->
+        <button disabled>测试</button>
+      </li>
+    </ul>
+  </form>
+</body>
+
+</html>

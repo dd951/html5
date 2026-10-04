@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>音视频标签</title>
+</head>
+
+<body>
+  <h2>视频标签</h2>
+  <video src="./1.mp4" controls="controls" width="1000"></video>
+  <!-- 在h5中如果属性的键和值是相同的，则可以省去值 -->
+  <video src="./1.mp4" controls width="1000" autoplay muted></video>
+  <video src="./1.mp4" controls width="1000" loop></video>
+
+  <hr>
+  <!-- 兼容性写法 -->
+  <video controls="controls" width="1000" poster="./pig.png">
+    <source src="./1.mp4" type="video/mp4">
+    <p>您的浏览器不支持视频播放</p>
+  </video>
+
+  <h2>音频标签</h2>
+  <audio src="./ldh.mp3" controls muted autoplay loop></audio>
+  <!-- 兼容性写法 -->
+  <audio controls>
+    <source src="./ldh.mp3" type="audio/mp3">
+    <p>您的浏览器不支持音频播放</p>
+  </audio>
+</body>
+
+</html>
